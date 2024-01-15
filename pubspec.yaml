@@ -1,0 +1,53 @@
+name: heart_rate
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^16.3.0
+  flutter_launcher_icons: ^0.13.1
+  sleek_circular_slider: ^2.0.1
+  flutter_blue_plus:
+  flutter_blue: ^0.8.0
+
+  tflite:
+  notification_permissions: ^0.6.1
+  dartz: ^0.10.1
+  dio: ^5.4.0
+  animated_text_kit: ^4.2.2
+  get: ^4.6.6
+  sizer: ^2.0.15
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl:
+  weekday_selector: ^1.1.0
+  flutter_datetime_picker_plus: ^2.0.1
+  permission_handler:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/utils/
+  filename: app_assets.dart
+  field_prefix: null
