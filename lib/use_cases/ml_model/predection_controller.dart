@@ -26,7 +26,7 @@ class PredictionController extends GetxController {
   Future<void> predict() async {
 
     String apiUrl = '${baseUrl!}/predict';
-
+customSnackBar(title: "Test Base URL", message: apiUrl, successful: true,durationInSec: 3);
     try {
       loading.value = true;
       final response = await _dio.post(

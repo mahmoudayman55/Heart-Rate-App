@@ -8,6 +8,7 @@ SnackbarController customSnackBar({
   required String title,
   required String message,
   required bool successful,
+  int durationInSec=3
 }) {
   return Get.snackbar(
     title,
@@ -25,6 +26,6 @@ SnackbarController customSnackBar({
       successful ? Icons.check : Icons.error,
       color: Colors.white,
     ),
-    duration: const Duration(seconds: 3),
+    duration:  Duration(seconds: durationInSec),
   );
 }
